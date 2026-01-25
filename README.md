@@ -7,6 +7,12 @@ Predicts the probability of a team winning an IPL match during the 2nd inning us
 🔗 Live Demo
 
 Try the app here:https://ipl-win-percentage-predictor-5ccimeezat6njftenibfrs.streamlit.app/
+## 📝 Model Notebook
+
+Check out how the IPL Win Predictor ML model was built and trained:
+
+[IPL Win Predictor Notebook](notebook.ipynb)
+
 
 🛠 Features
 
