@@ -48,5 +48,12 @@ if(st.button('Predict Probability')):
     result=pipe.predict_proba(input)
     loss=result[0][0]
     win=result[0][1]
-    st.text(batting_team + "- " + str(round(win*100)) + "%" )
-    st.text(bowling_team + "- " + str(round(loss*100)) + "%")
+    if wickets == 0 and runs_left > 0:
+        st.text(batting_team + " - 0%")
+        st.text(bowling_team + " - 100%")
+    elif rrr > 36:
+        st.text(batting_team + " - 0%")
+        st.text(bowling_team + " - 100%")
+    else:
+        st.text(batting_team + "- " + str(round(win*100)) + "%" )
+        st.text(bowling_team + "- " + str(round(loss*100)) + "%")
